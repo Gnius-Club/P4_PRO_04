@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook - Robot Héroe - Sesión 4: ¡Entrega del Prototipo!</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .header { background-color: #ffa500; color: white; text-align: center; padding: 10px; } /* Orange Accent */
+        .activity { margin-bottom: 20px; }
+        .banner {
+            background-color: #ffa500; /* Orange Accent */
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: bold;
+            /* Added Flexbox for side-by-side layout */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Use details/summary for accordions */
+        details > summary {
+            list-style: none; /* Remove default triangle */
+        }
+        details > summary::-webkit-details-marker {
+            display: none; /* Remove default triangle for Chrome/Safari */
+        }
+        details > summary::marker {
+             display: none; /* Remove default triangle for Firefox */
+        }
+        /* Custom marker logic (optional) */
+        /*
+         details > summary:before {
+            content: '▶ ';
+            margin-right: 5px;
+         }
+         details[open] > summary:before {
+            content: '▼ ';
+         }
+        */
+        .content { display: block; padding: 10px; border: 1px solid #ddd; margin-top: -10px; margin-bottom: 10px; border-top: none;} /* Ensure content is visible by default */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: top;
+        }
+        span[style*="color: red;"] { /* Keep red span for emphasis */
+            font-weight: bold;
+        }
+         ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .time-title { margin-bottom: 20px; text-align: center; font-size: 1.2em; color: #555;}
+        /* Style for Kanban icons */
+        .kanban-icon { font-size: 1.2em; margin: 0 2px; }
+        .kanban-todo { color: #f0ad4e; } /* Yellow/Orange for To Do */
+        .kanban-doing { color: #5bc0de; } /* Blue for Doing */
+        .kanban-test { color: #d9534f; } /* Red for Test */
+        .kanban-done { color: #5cb85c; } /* Green for Done */
+
+        /* Span styles for title and time in banner */
+        .activity-title {
+            flex-grow: 1; /* Allows title to take available space */
+            padding-right: 10px; /* Add some space between title and time */
+        }
+        .activity-time {
+            white-space: nowrap; /* Prevents time from wrapping */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Playbook - Robot Héroe - Sesión 4: ¡Entrega del Prototipo! – Robot Héroe Listo para la Misión</h1>
+    </div>
+    <div class="container">
+        <h2 class="time-title">Tiempo efectivo de clase: 40 minutos</h2>
+
+        <!-- Resumen de Sesión -->
+        <details id="activity-0" class="activity">
+            <summary class="banner">
+                <span class="activity-title">📝 Resumen de Sesión</span>
+                <span class="activity-time"></span>
+            </summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td style="width: 50%; padding: 10px; border-right: 1px solid #ddd;">
+                            <strong>🎯 Objetivo de la Sesión:</strong>
+                            <ul>
+                                <li>Realizar últimos ajustes basados en las pruebas de la Sesión 3.</li>
+                                <li>Verificar el funcionamiento general del prototipo.</li>
+                                <li>Preparar y entregar el prototipo funcional básico al profesor.</li>
+                            </ul>
+                            <strong>⏱️ Duración Estimada:</strong> 40 minutos.
+                        </td>
+                        <td style="width: 50%; padding: 10px;">
+                            <strong>🔑 Entregable Clave:</strong>
+                            <ul>
+                                <li>Prototipo funcional básico del Robot Héroe entregado.</li>
+                                <li>Tarjeta principal del proyecto movida a "¡Listo!" (✅) en el Kanban.</li>
+                                <li>Equipo y espacio de trabajo recogidos.</li>
+                            </ul>
+                            <strong>🛠️ Materiales Específicos:</strong>
+                             <ul>
+                                <li>Proyector o pantalla interactiva.</li>
+                                <li>Presentación de diapositivas (Diapositivas 1-5 propuestas).</li>
+                                <li>Tableros Kanban de cada equipo (actualizados de la Sesión 3).</li>
+                                <li>Prototipos de Robot Héroe (casi terminados).</li>
+                                <li>Computadoras con software de programación y código final.</li>
+                                <li>Baterías cargadas, cables organizados.</li>
+                                <li>Posiblemente un checklist de entrega (proporcionado por el profesor).</li>
+                                <li>Espacio de pruebas para verificación final.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Desarrollo de la Sesión -->
+
+        <!-- Actividad 1: ¡Saludo Final y Meta de Entrega! -->
+        <details id="activity-1" class="activity">
+            <summary class="banner">
+                 <span class="activity-title">🏁 Actividad 1: ¡Saludo Final y Meta de Entrega!</span>
+                 <span class="activity-time">⏰ Tiempo: 1.5 minutos</span>
+            </summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1 (1.5 min):</strong> Iniciar la última sesión del prototipo rápido con enfoque en la entrega.
+                            <br><em>(<strong>Proyectar Diapositiva 1:</strong> Título Sesión 4 + Objetivo: "¡Entrega del Prototipo! Objetivo: Ajustes finales, verificación y entrega").</em>
+                            <br><em>(<strong>Proyectar Diapositiva 2:</strong> Foco: Prototipo Funcional - Imagen del robot con un check ✅ grande. Texto: "Meta de hoy: ¡Dejar el robot funcionando para la entrega!").</em>
+                        </td>
+                        <td>
+                            "¡Equipos, hemos llegado a la Sesión 4, la última de nuestro Prototipo Rápido! ¡Hoy es el día de la entrega! Nuestro objetivo principal es hacer los últimos ajustes, asegurarnos de que nuestro Robot Héroe funciona con su capacidad básica (movimiento y su sensor principal) y prepararlo para presentarlo."
+                            <br><br>
+                            "El foco absoluto de hoy es: <span style='color: red;'>¡Dejar el prototipo funcional!</span> Lo más importante es que la función principal que definimos y probamos esté operativa."
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Actividad 2: ¡Verificación Final y Empaquetado! -->
+        <details id="activity-2" class="activity">
+            <summary class="banner">
+                 <span class="activity-title">🔧 Actividad 2: ¡Verificación Final y Empaquetado!</span>
+                 <span class="activity-time">⏰ Tiempo: 33.5 minutos</span>
+            </summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1 (1.5 min):</strong> Explicar las tareas finales de cada rol para la verificación y preparación.
+                            <br><em>(<strong>Proyectar Diapositiva 3:</strong> Verificación Final - Roles y Tareas - Lista por rol: Ing./Tester 💻🧪: Corregir bugs críticos, Prueba completa final | Tester 🧪: Verificar consistencia función principal | Ing. 💻: Asegurar carga/conexiones | Arq. T. 📐: Supervisar orden/presentación).</em>
+                        </td>
+                        <td>
+                            "Muy bien, para esta fase final de 'Verificación y Empaquetado', cada rol tiene tareas cruciales:"
+                            <br><br>
+                            "▶️ <strong>Ingeniero/a (💻) y Tester (🧪):</strong> ¡Dúo dinámico de calidad! Trabajen juntos para corregir esos errores <span style='color: red;'>críticos</span> que identificaron en la sesión pasada. Una vez corregidos, realicen una <span style='color: red;'>prueba completa</span> de la funcionalidad principal."
+                            <br>
+                            "▶️ <strong>Tester (🧪):</strong> Mientras se hacen las correcciones, verifica específicamente la <span style='color: red;'>consistencia</span> de la función principal. ¿Hace lo que se supone que debe hacer de manera fiable?"
+                            <br>
+                            "▶️ <strong>Ingeniero/a (💻):</strong> ¡Detalles técnicos finales! Asegúrate de que el <span style='color: red;'>código final</span> esté cargado en el robot, las <span style='color: red;'>baterías estén cargadas</span> y todas las <span style='color: red;'>conexiones físicas</span> (cables, motores, sensores) estén seguras."
+                            <br>
+                            "▶️ <strong>Arquitecto/a T. (📐):</strong> ¡Supervisión final! Asegúrate de que el robot esté presentable (cables ordenados, limpio) y supervisa que el proceso general vaya en orden para la entrega."
+                            <br><br>
+                            "¡Este es el último empujón para asegurar que nuestro héroe esté listo!"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 2 (30 min):</strong> Facilitar el trabajo final de ajuste, prueba y preparación.
+                            <br>Circular intensamente, apoyando en la corrección de últimos errores.
+                            <br>Asegurarse de que se realiza una prueba funcional completa al final.
+                            <br>Verificar los aspectos físicos (carga, conexiones, orden).
+                            <br>El profesor puede empezar a circular y observar los prototipos casi listos.
+                        </td>
+                        <td>
+                            "¡Adelante, equipos! Tienen 30 minutos para estos ajustes y verificaciones finales."
+                            <br><br>
+                            <em>(Mientras circulas):</em>
+                            "Ingeniero/a, Tester, ¿cómo va esa corrección del bug X?"
+                            "Tester, ¿has podido verificar si la función Y es consistente ahora?"
+                            "Ingeniero/a, ¿baterías cargando? ¿Código final cargado?"
+                            "Arquitecto/a T., ¿todo en orden para la presentación? ¿Cables recogidos?"
+                            "¡Recuerden hacer una última prueba completa cuando crean que está listo!"
+                            "¡Ya casi lo tenemos, héroes!"
+                            <br><br>
+                            <em>(Profesor puede empezar a dar una vuelta para ver los robots).</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 3 (1 min):</strong> Guiar el Kanban Flow final.
+                            <br><em>(<strong>Proyectar Diapositiva 4:</strong> Kanban Flow Final - Flecha grande apuntando a la columna "¡Listo!" ✅. Texto: "Si el prototipo está funcional... ¡Mover tarjeta principal a Listo!").</em>
+                        </td>
+                        <td>
+                            "¡Atención, equipos! Si después de esta verificación final, su prototipo cumple la función principal de manera consistente... ¡Es hora de mover la tarjeta principal de su proyecto (o la tarea clave que representa la funcionalidad) a la columna final: <strong class='kanban-icon kanban-done'>✅ ¡Listo!</strong>"
+                            <br><br>
+                            "¡Arquitectos/as T., hagan los honores si su equipo considera que el Héroe está listo para la misión!"
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 4 (1 min):</strong> Breve chequeo final visual y preparación para la entrega formal.
+                        </td>
+                        <td>
+                            "¡Excelente! Veo muchas tarjetas llegando a la meta ✅. Tómense 30 segundos para darle una última mirada a su robot. ¿Todo conectado? ¿Listo para moverse?"
+                            <br><br>
+                            "¡Prepárense para la entrega!"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Actividad 3: ¡Prototipo Funcional Entregado! -->
+        <details id="activity-3" class="activity"> <!-- Renumbered from 4 to 3 -->
+            <summary class="banner">
+                 <span class="activity-title">🏆 Actividad 3: ¡Prototipo Funcional Entregado!</span> <!-- Renumbered from 4 to 3 -->
+                 <span class="activity-time">⏰ Tiempo: 5 minutos</span>
+            </summary>
+            <div class="content">
+                <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1 (1 min):</strong> Dar instrucciones claras para la entrega.
+                            <br><em>(<strong>Proyectar Diapositiva 5:</strong> ¡Entrega del Prototipo! - Instrucciones: 1. Apagar robots. 2. Colocar en zona designada. 3. Recoger materiales. + Icono de regalo 🎁 o trofeo 🏆).</em>
+                            <br>(Opcional: usar un checklist de recepción).
+                        </td>
+                        <td>
+                            "¡Ha llegado el momento de la entrega oficial de sus prototipos de Robot Héroe!"
+                            <br><br>
+                            "Las instrucciones son sencillas:
+                            <br>1. Apaguen sus robots con cuidado.
+                            <br>2. Coloquen su prototipo completo en [indicar lugar específico de entrega, ej: la mesa delantera].
+                            <br>3. Asegúrense de que su espacio de trabajo queda limpio y recojan todos los materiales adicionales."
+                            <br><br>
+                            "Yo pasaré a revisar que cada prototipo esté entregado." <em>(Si usa checklist, mencionarlo: "Usaré este checklist rápido para confirmar la recepción").</em>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 2 (2 min):</strong> Los equipos entregan sus prototipos.
+                        </td>
+                        <td>
+                            "¡Adelante, equipos! Procedan con la entrega."
+                            <br><br>
+                            <em>(Supervisar el proceso de entrega y recogida).</em>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 3 (2 min):</strong> Reconocimiento final del esfuerzo y cierre del ciclo de prototipado rápido.
+                        </td>
+                        <td>
+                            "¡Equipos, quiero darles una enorme felicitación! En solo 4 sesiones, han pasado de una idea a un prototipo robótico funcional que intenta resolver un problema real del mundo. Han trabajado con Kanban, asignado roles, programado, construido, probado y corregido errores."
+                            <br><br>
+                            "Este es un gran logro y demuestra su capacidad para crear tecnología con propósito. ¡Estoy muy orgulloso de sus Robots Héroes y del increíble trabajo en equipo que han demostrado!"
+                            <br><br>
+                            "¡Misión del Prototipo Rápido completada! ¡Un aplauso para todos ustedes!" <em>(Liderar aplauso).</em>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+    </div> <!-- Fin del container -->
+</body>
+</html>
